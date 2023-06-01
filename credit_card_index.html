@@ -1,0 +1,66 @@
+<!-- I will need to have assets available for each of the credit cards as well -->
+<!-- Need to add file with detailed instructions for adding / removing -->
+<!-- Should this really just be an app? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./credit-card-styling.css">
+  <title>Credit Card Component</title>
+</head>
+<body>
+  <!-- There will be a front card and a back card, but both will use the same card container -->
+  <div class="credit-card-container">
+    <div class="name-container">
+      <div class="first-name">Daniel</div>
+      <div class="last-name">Pericich</div>
+    </div>
+    <div class="card-number-container">
+      <div class="card-number">8080 8080 8080 8080</div>
+    </div>
+    <div class="card-company-container">
+      <div class="card-company-name">
+        Discover
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <!-- Will need to change the text on Click -->
+    <div class="button-flip" onclick="flipCard()" data-side="front">
+      Click to Flip the Card
+    </div>
+  </div>
+
+  <script>
+    const cardFlipButton = document.querySelector('.button-flip');
+
+
+    // Need to setup constants for Expected values -> How will I access these?
+    const mastercard_digit = ["2", "5"]
+    const visa_digit = "4";
+    const american_express = "3"
+
+    // Need a function to look at first digit of card and change the brand accordingly
+    const setCreditCardType = (credit_card_number) => {
+      // Will this update on key press?
+      // Or can I set this and only call it if the number value is < 2 digits
+    }
+
+    const flipCard = () => {
+      // Can set the dataset.side, or have a variable in this script tag for side
+      // const currentSideFront = true -> default
+      if (cardFlipButton.dataset.side = 'front') {
+        console.log(cardFlipButton.dataset.side)
+        cardFlipButton.dataset.side = 'back';
+        console.log(cardFlipButton.dataset.side)
+      }
+    }
+
+    // Will need to add in the fields
+  </script>
+</body>
+</html>
