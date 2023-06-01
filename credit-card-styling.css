@@ -1,0 +1,17 @@
+.credit-card-container {
+  background-color: lightblue;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px rgba(0,0,0, 0.05);
+  /* This color will either be theme or brand based */
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.first-name {
+  margin-right: 1rem;
+}
