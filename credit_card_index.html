@@ -34,29 +34,34 @@
         <button type="submit" class="form-submit">Submit</button>
       </form>
     </div>
-  <!-- There will be a front card and a back card, but both will use the same card container -->
-  <div class="credit-card-container">
-    <div class="name-container">
-      <div class="first-name">Daniel</div>
-      <div class="last-name">Pericich</div>
-    </div>
-    <div class="card-number-container">
-      <div class="card-number">8080 8080 8080 8080</div>
-    </div>
-    <div class="card-company-container">
-      <div class="card-company-name">
-        Discover
+    <!-- There will be a front card and a back card, but both will use the same card container -->
+    <div class="credit-card-component">
+      <div class="credit-card-container front">
+          <img src="/card-chip.png" alt="card chip" class="credit-card-chip" >
+        <div class="">
+          <div class="name-container">
+            <div class="card-name">John Smith</div>
+          </div>
+          <div class="card-number-container">
+            <div class="card-number">8080 8080 8080 8080</div>
+          </div>
+          <div class="card-expiration-container">
+            <div class="card-expiration">10/28</div>
+          </div>
+          <div class="card-company-container">
+            <div class="card-company-name">
+              Discover
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-  </div>
-
-  <div>
-    <!-- Will need to change the text on Click -->
-    <div class="button-flip" onclick="flipCard()" data-side="front">
-      Click to Flip the Card
-    </div>
-  </div>
+      <div class="credit-card-container back">
+        <div class="cvv-container">
+          547
+        </div>
+      </div>
+      <div>
 
   <script>
     const cardFlipButton = document.querySelector('.button-flip');
