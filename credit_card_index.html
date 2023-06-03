@@ -11,6 +11,29 @@
   <title>Credit Card Component</title>
 </head>
 <body>
+  <div class="credit-card-component-container">
+    <div class="form-input-component">
+      <!-- Need to add an action to submit the credit card info -->
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="card-number" class="form-label">Card Number:</label>
+          <input type="text" class="form-input" id="card-number" maxlength="16" required>
+        </div>
+        <div class="form-group">
+          <label for="card-name" class="form-label">Cardholder Name:</label>
+          <input type="text" class="form-input" id="card-name" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry-date" class="form-label">Expiration Date:</label>
+          <input type="text" class="form-input" id="expiry-date" maxlength="7" placeholder="MM/YYYY" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv" class="form-label">CVV:</label>
+          <input type="text" class="form-input" id="cvv" maxlength="4" required>
+        </div>
+        <button type="submit" class="form-submit">Submit</button>
+      </form>
+    </div>
   <!-- There will be a front card and a back card, but both will use the same card container -->
   <div class="credit-card-container">
     <div class="name-container">
