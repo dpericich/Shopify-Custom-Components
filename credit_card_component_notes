@@ -1,0 +1,14 @@
+## Notes for Creating Custom Credit Card Component
+https://www.lloydsbank.com/credit-cards/help-and-guidance/credit-card-numbers-explained.html
+
+## Credit Card Numbers per Provider
+- Mastercard numbers start with a 2 or 5.
+- Visa card numbers start with a 4.
+- American Express numbers start with a 3.
+
+## Credit Card Flip Tutorial
+https://www.w3schools.com/howto/howto_css_flip_card.asp
+- Want to use this to create card flip effect for front / back of credit card
+- This will not be a hover effect, but will trigger off of input focus
+- May add a button to allow manual card flips
+
