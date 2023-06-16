@@ -1,0 +1,154 @@
+.component-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ################## */
+/* Input Field Styles */
+/* ################## */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-header {
+  text-decoration: underline;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-input {
+  border: solid 2px black;
+  border-radius: 5px;
+  width: 15rem;
+  padding: .5rem;
+}
+
+.form-submit {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 5px 2px 2px rgba(0,0,0, 0.07);
+  text-transform: uppercase;
+  /* The color and background-color will be pulled in from the theme */
+}
+
+.form-submit:hover {
+  background-color:wheat;
+}
+
+/* ################## */
+/* Credit Card Styles */
+/* ################## */
+
+.animation-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: flex-end; */
+  background-color: navy;
+  padding: 2rem;
+  height: 190px;
+  width: 300px;
+  /* padding: 1rem; */
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px rgba(0,0,0, 0.05);
+  /* This color will either be theme or brand based */
+}
+
+.credit-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.credit-card-bank-name {
+  text-transform: uppercase;
+  letter-spacing: 1.3;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.credit-card-chip {
+  position: absolute;
+  top: 33%;
+  left: -2%;
+  height: 70px;
+}
+
+.credit-card-number {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  color:white;
+}
+
+.credit-card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.credit-card-name {
+  color: gold;
+  text-shadow: 1px 1px 3px black;
+}
+
+.credit-card-expiration {
+  color: gold;
+  text-shadow: 1px 1px 3px black;
+}
+
+.credit-card-back {
+}
+
+.credit-card-magnetic-strip{
+  width: calc(100% + 4rem);
+  transform: translateX(-2rem);
+  height: 2.5rem;
+  background-color: black;
+}
+
+.credit-card-signature {
+  width: 70%;
+  height: 2rem;
+  background-color: white;
+}
+
+.credit-card-cvv {
+  width: 20%;
+  height: 2rem;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+.credit-card-legal-text {
+  color: white;
+}
